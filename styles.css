@@ -31,7 +31,11 @@
 	justify-content: space-between;
 	align-items: center;
 }
-
+.menu {
+	width: 30px;
+	height: 30px;
+	display: none;
+}
 .link {
 	color: white;
 	text-transform: uppercase;
@@ -272,11 +276,415 @@
 .imp-links-container ul a {
 	text-decoration: none;
 }
-
+.useful-links-container ul,
+.imp-links-container ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
 .useful-links-container ul li,
 .imp-links-container ul li {
 	list-style-type: none;
 	color: #fff;
 	font-family: "Roboto", sans-serif;
 	text-decoration: none;
+}
+
+@media screen and (min-width: 1500px) {
+	.description {
+		font-size: 22px;
+		line-height: 26px;
+	}
+	.useful-links-container ul li,
+	.imp-links-container ul li {
+		font-size: 22px;
+	}
+	.useful-links-container ul,
+	.imp-links-container ul {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.footer-title-logo {
+		font-size: 40px;
+	}
+
+	.footer-subTitle {
+		font-size: 20px;
+	}
+
+	.follow-us-container {
+		gap: 20px;
+	}
+
+	.follow-us {
+		font-size: 30px;
+	}
+
+	.social {
+		display: flex;
+		gap: 20px;
+	}
+
+	.social img {
+		width: 40px;
+	}
+}
+
+@media Screen and (min-width: 1300px) {
+	.title-logo {
+		font-size: 35px;
+	}
+	.link {
+		font-size: 18px;
+	}
+	.welcome-text {
+		font-size: 35px;
+	}
+
+	.title {
+		font-size: 60px;
+	}
+
+	.sub-title {
+		font-size: 35px;
+	}
+	.title-heading {
+		font-size: 40px;
+		padding-bottom: 30px;
+	}
+
+	.title-sub-heading {
+		font-size: 25px;
+	}
+	.photograph-title {
+		font-size: 25px;
+	}
+
+	.photograph-description {
+		font-size: 16px;
+	}
+
+	.view-more {
+		width: 100px;
+		height: 35px;
+		font-size: 16px;
+	}
+	.useful-links-container,
+	.imp-links-container {
+		gap: 25px;
+	}
+
+	.useful-links,
+	.imp-links {
+		font-size: 30px;
+	}
+}
+
+@media Screen and (min-width: 760px) and (max-width: 1300px) {
+	.bannerContainer {
+		height: 650px;
+	}
+
+	.title-logo {
+		font-size: 25px;
+	}
+	.link {
+		font-size: 12px;
+	}
+	.welcome-text {
+		font-size: 25px;
+	}
+
+	.title {
+		font-size: 45px;
+	}
+
+	.sub-title {
+		font-size: 25px;
+	}
+	.title-heading {
+		font-size: 35px;
+		padding-bottom: 25px;
+	}
+
+	.title-sub-heading {
+		font-size: 25px;
+	}
+	.photograph-title {
+		font-size: 14px;
+	}
+
+	.photograph-description {
+		font-size: 10px;
+		padding: 0px 10px;
+	}
+
+	.view-more {
+		width: 60px;
+		height: 25px;
+		font-size: 10px;
+	}
+	.description {
+		font-size: 10px;
+		line-height: 15px;
+	}
+	.read-more-btn {
+		width: 80px;
+		height: 30px;
+		font-size: 14px;
+	}
+	.useful-links-container,
+	.imp-links-container {
+		gap: 20px;
+	}
+
+	.useful-links,
+	.imp-links {
+		font-size: 25px;
+	}
+	.footer-title-logo {
+		font-size: 30px;
+	}
+
+	.footer-subTitle {
+		font-size: 15px;
+	}
+
+	.follow-us-container {
+		gap: 10px;
+	}
+
+	.follow-us {
+		font-size: 20px;
+	}
+
+	.social {
+		display: flex;
+		gap: 10px;
+	}
+
+	.social img {
+		width: 30px;
+	}
+}
+
+@media Screen and (min-width: 480px) and (max-width: 760px) {
+	.bannerContainer {
+		height: 400px;
+	}
+	.links {
+		display: none;
+	}
+	.menu {
+		width: 20px;
+		height: 20px;
+		display: block;
+	}
+	.title-logo {
+		font-size: 18px;
+	}
+	.welcome-text {
+		font-size: 20px;
+	}
+
+	.title {
+		font-size: 30px;
+	}
+
+	.sub-title {
+		font-size: 20px;
+	}
+	.book-now-btn {
+		width: 80px;
+		font-size: 14px;
+	}
+	.title-heading {
+		font-size: 22px;
+		padding-bottom: 15px;
+	}
+
+	.title-sub-heading {
+		font-size: 18px;
+	}
+	.photographyContainer {
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+	.col {
+		width: 200px;
+	}
+	.photograph-title {
+		font-size: 16px;
+	}
+
+	.photograph-description {
+		font-size: 10px;
+		padding: 0px 10px;
+	}
+
+	.view-more {
+		width: 50px;
+		height: 22px;
+		font-size: 8px;
+	}
+	.story-container {
+		width: 100%;
+		flex-direction: column-reverse;
+		gap: 30px;
+	}
+	.info,
+	.info-img-container {
+		width: 100%;
+	}
+	.info {
+		gap: 20px;
+	}
+	.description {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.read-more-btn {
+		width: 80px;
+		height: 30px;
+		font-size: 14px;
+	}
+	.footer {
+		flex-direction: column;
+		gap: 40px;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 580px) {
+	.col {
+		width: 160px;
+	}
+	.photograph-title {
+		font-size: 14px;
+	}
+	.photograph-description {
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+	.bannerContainer {
+		height: 200px;
+	}
+	.banner-infoContainer {
+		margin-top: 20px;
+		height: 70%;
+	}
+	.links {
+		display: none;
+	}
+	.menu {
+		width: 20px;
+		height: 20px;
+		display: block;
+	}
+	.title-logo {
+		font-size: 16px;
+	}
+	.welcome-text {
+		font-size: 16px;
+	}
+	.title {
+		font-size: 24px;
+	}
+	.sub-title {
+		font-size: 10px;
+	}
+	.book-now-btn {
+		width: 60px;
+		height: 25px;
+		font-size: 10px;
+	}
+
+	.title-heading {
+		font-size: 14px;
+		padding-bottom: 10px;
+	}
+	.title-sub-heading {
+		font-size: 10px;
+	}
+	.photographyContainer {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.col {
+		width: 100%;
+	}
+	.photograph-title {
+		font-size: 20px;
+	}
+	.photograph-description {
+		font-size: 12px;
+	}
+	.view-more {
+		width: 60px;
+		height: 25px;
+		font-size: 10px;
+	}
+	.story-container {
+		flex-direction: column-reverse;
+		gap: 10px;
+	}
+	.info,
+	.info-img-container {
+		width: 100%;
+	}
+	.info {
+		gap: 10px;
+	}
+	.description {
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.read-more-btn {
+		width: 70px;
+		height: 25px;
+		font-size: 12px;
+	}
+
+	.footer {
+		flex-direction: column;
+		gap: 40px;
+		padding-bottom: 30px;
+	}
+
+	.about-container {
+		width: 100%;
+		gap: 20px;
+	}
+
+	.footer-title-logo {
+		font-size: 25px;
+	}
+
+	.footer-subTitle {
+		font-size: 14px;
+	}
+
+	.follow-us {
+		font-size: 14px;
+	}
+
+	.social {
+		gap: 15px;
+	}
+
+	.social img {
+		width: 20px;
+	}
+	.useful-links-container,
+	.imp-links-container {
+		width: 100%;
+		gap: 10px;
+	}
+
+	.useful-links,
+	.imp-links {
+		font-size: 20px;
+	}
 }
